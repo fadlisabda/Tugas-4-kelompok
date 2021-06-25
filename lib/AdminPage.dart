@@ -52,8 +52,8 @@ class _AdminPageState extends State<AdminPage> {
                     )),
                     child: new Image.asset(
                       "img/$gambar",
-                      height: 120,
-                      fit: BoxFit.fitWidth,
+                      height: 45,
+                      fit: BoxFit.fitHeight,
                     ),
                   ),
                 ),
