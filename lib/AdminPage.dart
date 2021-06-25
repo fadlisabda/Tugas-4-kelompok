@@ -52,8 +52,8 @@ class _AdminPageState extends State<AdminPage> {
                     )),
                     child: new Image.asset(
                       "img/$gambar",
-                      height: 50,
-                      fit: BoxFit.fitHeight,
+                      height: 120,
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),
@@ -118,8 +118,15 @@ class Detail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      appBar: AppBar(
+        title: Text("Info: $nama"),
+        backgroundColor: Colors.green[900],
+      ),
       body: new ListView(
         children: <Widget>[
+          SizedBox(
+            height: 20,
+          ),
           new Container(
               height: 190.0,
               child: new Hero(
